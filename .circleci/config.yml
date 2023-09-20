@@ -14,7 +14,7 @@ jobs:
             echo $version
             docker build -t jossydee1/meme-app:$version .
             echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-            docker push jossydee1/todo-app:$version
+            docker push jossydee1/meme-app:$version
 
   Update_manifest:
     docker:
